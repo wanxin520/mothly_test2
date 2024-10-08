@@ -6,8 +6,8 @@ import { ref } from "vue"
 
 <template>
     <div>
-        <h1>创建新仓库</h1>
 
+        创建仓库页面
     </div>
 </template>
 <style scoped></style>

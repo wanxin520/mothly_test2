@@ -29,7 +29,7 @@ const login = () => {
             console.log(res.data);
             localStorage.setItem("OAuthKey", res.data.access_token
             )
-            // router.replace({ name: 'homepage' })
+            router.replace({ name: 'homepage' })
         })
         .catch((err) => {
             console.log(err);

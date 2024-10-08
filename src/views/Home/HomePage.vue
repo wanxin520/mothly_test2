@@ -96,7 +96,7 @@ const handleClose = (key: string, keyPath: string[]) => {
                             <Icon icon="tabler:settings-2" width="1rem" height="1rem" />
                         </div>
                     </el-menu-item>
-                    <el-menu-item index="13">
+                    <el-menu-item index="14">
                         <div class="flex flex-col justify-center items-center m-auto">
                             <Icon icon="carbon:user-avatar-filled" width="1rem" height="1rem" />
                         </div>
