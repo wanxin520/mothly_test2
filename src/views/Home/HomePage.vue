@@ -18,7 +18,7 @@ const handleClose = (key: string, keyPath: string[]) => {
     <div class="w-[100vw] flex">
         <el-row class="tac">
             <el-col :span="3.5">
-                <el-menu default-active="1" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose">
+                <el-menu default-active="5" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose">
                     <el-menu-item index="1">
                         <el-icon>
                             <location />

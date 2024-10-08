@@ -6,10 +6,10 @@ const handleOpen = (key: String, keyPath: string[]) => {
     // console.log(key);
     switch (key) {
         case '1':
-            router.push({ path: '/homepage/repository/all' })
+            router.push({ path: '/homepage/repository/recently' })
             break;
         case '2':
-            router.push({ path: '/homepage/repository/recently' })
+            router.push({ path: '/homepage/repository/all' })
             break;
         case '3':
             router.push({ path: '/homepage/repository/open' })
