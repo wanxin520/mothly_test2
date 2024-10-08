@@ -3,9 +3,10 @@ import axios from "axios"
 // import useRequest from ""
 import { reactive, ref } from 'vue'
 import type { FormItemProps, FormProps } from 'element-plus'
-const labelPosition = ref<FormProps['labelPosition']>('right')
+import { useRouter } from "vue-router";
 const itemLabelPosition = ref<FormItemProps['labelPosition']>('')
 
+const router = useRouter()
 const userInfo = reactive({
     grant_type: 'password',
     username: '3113415005@qq.com',
@@ -27,6 +28,7 @@ const login = () => {
         .then((res) => {
             console.log(res.data);
             localStorage.setItem("OAuthKey", res.data)
+            router.replace({ name: 'homepage' })
         })
         .catch((err) => {
             console.log(err);
