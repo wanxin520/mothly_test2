@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { Icon } from '@iconify/vue';
 import { RouterView } from 'vue-router'
 import {
     Document,
@@ -20,67 +21,76 @@ const handleClose = (key: string, keyPath: string[]) => {
             <el-col :span="3.5">
                 <el-menu default-active="5" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose">
                     <el-menu-item index="1">
-                        <el-icon>
-                            <location />
-                        </el-icon>
-                        <span>工作台</span>
+                        <div class="w-[100%]  flex flex-col justify-center items-center m-auto">
+                            <Icon icon="ri:computer-line" width="1rem" height="1rem" />
+                        </div>
                     </el-menu-item>
                     <el-menu-item index="2">
-                        <el-icon><icon-menu /></el-icon>
-                        <span>项目</span>
+                        <div class="flex flex-col justify-center items-center m-auto">
+                            <el-icon>
+                                <Icon icon="bi:folder" width="1rem" height="1rem" />
+                            </el-icon>
+                        </div>
                     </el-menu-item>
                     <el-menu-item index="3">
-                        <el-icon>
-                            <document />
-                        </el-icon>
-                        <span>AI</span>
+                        <div class="flex flex-col justify-center items-center m-auto">
+                            <Icon icon="carbon:ai-generate" width="1rem" height="1rem" />
+                        </div>
                     </el-menu-item>
                     <el-menu-item index="4">
-                        <el-icon>
-                            <setting />
-                        </el-icon>
-                        <span>事项</span>
+                        <div class="flex flex-col justify-center items-center m-auto">
+                            <Icon icon="mdi:event-note-outline" width="1rem" height="1rem" />
+                        </div>
                     </el-menu-item>
                     <el-menu-item index="5">
-                        <el-icon>
-                            <setting />
-                        </el-icon>
-                        <span>代码</span>
+                        <div class="flex flex-col justify-center items-center m-auto">
+                            <Icon icon="ph:code-fill" width="1rem" height="1rem" />
+                        </div>
                     </el-menu-item>
                     <el-menu-item index="6">
-                        <el-icon>
-                            <setting />
-                        </el-icon>
-                        <span>制品</span>
+                        <div class="flex flex-col justify-center items-center m-auto">
+                            <Icon icon="fluent-mdl2:product-list" width="1rem" height="1rem" />
+                        </div>
                     </el-menu-item>
                     <el-menu-item index="7">
-                        <el-icon>
-                            <setting />
-                        </el-icon>
-                        <span>洞察</span>
+                        <div class="flex flex-col justify-center items-center m-auto">
+                            <Icon icon="hugeicons:inspect-code" width="1rem" height="1rem" />
+                        </div>
                     </el-menu-item>
                     <el-menu-item index="8">
-                        <el-icon>
-                            <setting />
-                        </el-icon>
-                        <span>知识</span>
+                        <div class="flex flex-col justify-center items-center m-auto">
+                            <Icon icon="carbon:ibm-watson-knowledge-studio" width="1rem" height="1rem" />
+                        </div>
                     </el-menu-item>
                     <el-menu-item index="9">
-                        <el-icon>
-                            <setting />
-                        </el-icon>
-                        <span>事项</span>
+                        <div class="flex flex-col justify-center items-center m-auto">
+                            <Icon icon="ic:baseline-motion-photos-auto" width="1rem" height="1rem" />
+                        </div>
                     </el-menu-item>
                     <el-menu-item index="10">
-                        <el-icon>
-                            <setting />
-                        </el-icon>
-                        <span>事自动化</span>
+                        <div class="flex flex-col justify-center items-center m-auto">
+                            <Icon icon="iconoir:user" width="1rem" height="1rem" />
+                        </div>
                     </el-menu-item>
                     <el-menu-item index="11">
-                        <el-icon>
-                            <setting />
-                        </el-icon>
+                        <div class="flex flex-col justify-center items-center m-auto">
+                            <Icon icon="ci:more-grid-big" width="1rem" height="1rem" />
+                        </div>
+                    </el-menu-item>
+                    <el-menu-item index="12">
+                        <div class="flex flex-col justify-center items-center m-auto">
+                            <Icon icon="f7:bell" width="1rem" height="1rem" />
+                        </div>
+                    </el-menu-item>
+                    <el-menu-item index="13">
+                        <div class="flex flex-col justify-center items-center m-auto">
+                            <Icon icon="tabler:settings-2" width="1rem" height="1rem" />
+                        </div>
+                    </el-menu-item>
+                    <el-menu-item index="13">
+                        <div class="flex flex-col justify-center items-center m-auto">
+                            <Icon icon="carbon:user-avatar-filled" width="1rem" height="1rem" />
+                        </div>
                     </el-menu-item>
                 </el-menu>
             </el-col>

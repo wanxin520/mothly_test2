@@ -8,7 +8,7 @@ const router = createRouter({
     { path: '/login', name: 'login', component: () => import('../views/Login/Login.vue') },
     // 主页
     {
-      path: '/homepage', name: 'homepage', redirect: '/homepage/repository/all',
+      path: '/homepage', name: 'homepage', redirect: '/homepage/repository/recently',
       component: () => import('../views/Home/HomePage.vue'),
       children: [
         // 仓库代码页面
