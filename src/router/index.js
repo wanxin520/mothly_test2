@@ -19,8 +19,9 @@ const router = createRouter({
             { path: 'all', name: 'all', component: () => import('../views/Home/Repository/AllRepository.vue') },
             { path: 'recently', name: 'recently', component: () => import('../views/Home/Repository/Recently.vue') },
             { path: 'open', name: 'open', component: () => import('../views/Home/Repository/OpenRepository.vue') },
-          ]
+          ],
         },
+        { path: 'create', name: 'create', component: () => import('../views/Home/Repository/CreateNewRepository.vue') },
       ]
     },
 

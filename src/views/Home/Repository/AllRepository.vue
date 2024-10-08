@@ -1,7 +1,10 @@
 <script setup>
 import { Icon } from "@iconify/vue";
+import { useRouter } from "vue-router";
 import axios from "axios";
 import { ref } from "vue"
+
+const router = useRouter()
 
 const OAuthKey = localStorage.getItem("OAuthKey")
 
@@ -70,7 +73,7 @@ parmas.append("type", "all")
             </div>
         </div>
         <div>
-            <el-button color="#414040">创建代码仓库</el-button>
+            <el-button @click="router.push({ name: `create` })" color="#414040">创建代码仓库</el-button>
         </div>
     </div>
 

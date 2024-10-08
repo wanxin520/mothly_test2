@@ -24,48 +24,57 @@ const handleClose = (key: string, keyPath: string[]) => {
                         <div class="w-[100%]  flex flex-col justify-center items-center m-auto">
                             <Icon icon="ri:computer-line" width="1rem" height="1rem" />
                         </div>
+                        <div>工作台</div>
                     </el-menu-item>
                     <el-menu-item index="2">
                         <div class="flex flex-col justify-center items-center m-auto">
                             <el-icon>
-                                <Icon icon="bi:folder" width="1rem" height="1rem" />
+                                <Icon icon="bi:folder" width="0.8rem" height="0.8rem" />
                             </el-icon>
                         </div>
+                        <div>项目</div>
                     </el-menu-item>
                     <el-menu-item index="3">
                         <div class="flex flex-col justify-center items-center m-auto">
                             <Icon icon="carbon:ai-generate" width="1rem" height="1rem" />
                         </div>
+                        <div>AI</div>
                     </el-menu-item>
                     <el-menu-item index="4">
                         <div class="flex flex-col justify-center items-center m-auto">
                             <Icon icon="mdi:event-note-outline" width="1rem" height="1rem" />
                         </div>
+                        <div>事项</div>
                     </el-menu-item>
                     <el-menu-item index="5">
                         <div class="flex flex-col justify-center items-center m-auto">
                             <Icon icon="ph:code-fill" width="1rem" height="1rem" />
                         </div>
+                        <div>代码</div>
                     </el-menu-item>
                     <el-menu-item index="6">
                         <div class="flex flex-col justify-center items-center m-auto">
                             <Icon icon="fluent-mdl2:product-list" width="1rem" height="1rem" />
                         </div>
+                        <div>制品</div>
                     </el-menu-item>
                     <el-menu-item index="7">
                         <div class="flex flex-col justify-center items-center m-auto">
                             <Icon icon="hugeicons:inspect-code" width="1rem" height="1rem" />
                         </div>
+                        <div>洞察</div>
                     </el-menu-item>
                     <el-menu-item index="8">
                         <div class="flex flex-col justify-center items-center m-auto">
                             <Icon icon="carbon:ibm-watson-knowledge-studio" width="1rem" height="1rem" />
                         </div>
+                        <div>知识</div>
                     </el-menu-item>
                     <el-menu-item index="9">
                         <div class="flex flex-col justify-center items-center m-auto">
                             <Icon icon="ic:baseline-motion-photos-auto" width="1rem" height="1rem" />
                         </div>
+                        <div>自动</div>
                     </el-menu-item>
                     <el-menu-item index="10">
                         <div class="flex flex-col justify-center items-center m-auto">
