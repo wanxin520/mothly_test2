@@ -41,7 +41,17 @@ const login = () => {
 <template>
     <div class="w-[100vw] h-[100vh] flex justify-center items-center">
         <div class="w-[40%] h-[100%]">
-            <img class="w-[100%] h-[100%]" src="/public/images/appm3V1L6Y3C3podIGShCo686dXRRY4i.png" alt="">
+            <el-carousel height="800px" autoplay>
+                <el-carousel-item>
+                    <img class="w-[100%] h-[100%]" src="/public/images/appm3V1L6Y3C3podIGShCo686dXRRY4i.png" alt="">
+                </el-carousel-item>
+                <el-carousel-item>
+                    <img class="w-[100%] h-[100%]" src="/public/images/app9KTBmXHMK2mtI9RHyzPDs-h0NXne1.png" alt="">
+                </el-carousel-item>
+                <el-carousel-item>
+                    <img class="w-[100%] h-[100%]" src="/public/images/appzx4bpYR9rpFdZULrF9EFycs2l-416.png" alt="">
+                </el-carousel-item>
+            </el-carousel>
         </div>
         <div class="h-[40%] w-[60%] flex flex-col justify-around items-center">
             <div>
@@ -53,7 +63,7 @@ const login = () => {
                         <el-input v-model="userInfo.username" />
                     </el-form-item>
                     <el-form-item label="密码" :label-position="itemLabelPosition">
-                        <el-input v-model="userInfo.password" />
+                        <el-input type="password" v-model="userInfo.password" />
                     </el-form-item>
                 </el-form>
                 <div>
