@@ -34,6 +34,9 @@ const formLabelAlign = reactive({
 })
 const submitForm = () => {
     axios.post(`https://gitee.com/api/v5/user/repos`, formLabelAlign)
+        .then((res) => {
+            console.log(res);
+        })
 }
 </script>
 <template>

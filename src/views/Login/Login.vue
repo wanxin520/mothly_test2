@@ -11,8 +11,8 @@ const userInfo = reactive({
     grant_type: 'password',
     username: '3113415005@qq.com',
     password: 'wx09270013',
-    client_id: '07cdb2b20843776cb0d51a6e470d1d9683500d5d29f8be25dc03061ff3eb3fe0',
-    client_secret: 'e2ac1342ed5778c394db3149fc16bfbb0e69070e4d284b894d7f7a275d588814',
+    client_id: '73f28b1d2ffc08cb506132eaa3bdfec2d23efad8a2de7f5132c0c307e9ecd728',
+    client_secret: '0ce87d06c690e3d3b24c0f0789353934b9bf9b6d144628e8d4cf5e33e0baae59',
     scoppe: 'user_info projects pull_requests issues notes keys hook groups gists enterprises'
 })
 
