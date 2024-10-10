@@ -53,21 +53,38 @@ const login = () => {
                 </el-carousel-item>
             </el-carousel>
         </div>
-        <div class="h-[40%] w-[60%] flex flex-col justify-around items-center">
-            <div>
-                <h2>登录，即刻创造您的应用</h2>
+        <div class="h-[60%] w-[60%] flex flex-col justify-around items-center">
+            <div class="text-[23px] font-bold">
+                登录，即刻创造您的应用
             </div>
-            <div class="w-[60%]">
-                <el-form label-position="left" label-width="auto" :model="userInfo" style="max-width: 600px">
-                    <el-form-item label="账号" :label-position="itemLabelPosition">
-                        <el-input v-model="userInfo.username" />
-                    </el-form-item>
-                    <el-form-item label="密码" :label-position="itemLabelPosition">
-                        <el-input type="password" v-model="userInfo.password" />
-                    </el-form-item>
+            <div class="w-[60%] flex flex-col justify-between items-center">
+                <el-form label-position="left" label-width="auto" :model="userInfo">
+                    <div class="w-[100%]">
+                        <el-input v-model="userInfo.username" placeholder="Please input" style="width: 20rem;"
+                            class="input-with-select">
+                            <template #prepend>
+                                账号
+                            </template>
+                        </el-input>
+                    </div>
+                    <div class="mt-6">
+                        <el-input v-model="userInfo.password" type="password" placeholder="Please input"
+                            class="input-with-select">
+                            <template #prepend>
+                                密码
+                            </template>
+                        </el-input>
+                    </div>
                 </el-form>
-                <div>
-                    <el-button @click="login" type="primary">登录</el-button>
+                <div class="mt-6 text-[10px] flex justify-start items-center">
+                    <el-checkbox value="Value A" />我已阅读并同意 <span class="text-[#4879ff]">服务协议</span> 和
+                    <span class="text-[#4879ff]">隐私政策</span>
+                </div>
+                <div class="mt-6">
+                    <el-button class="w-[20rem]" @click="login" type="primary">登录</el-button>
+                </div>
+                <div class="mt-10 text-[10px] flex justify-start items-center">
+                    还未注册？<span class="text-[#4879ff]">立即注册</span>
                 </div>
             </div>
         </div>
